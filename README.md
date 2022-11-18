@@ -30,9 +30,8 @@
 
 <h3>설계 주안점</h3>
 <ul>
-  <li>내 정보 수정 시 패스워드 일치 시 수정할 수 있도록 구현</li>
-  <li>지역,이름,컨셉등 다양하게 필터링을 받아서 조겅네 맞는 컨텐츰만 제공되도록 구현</li>
-  <li>다중파일 등록 구현</li>
+  <li>지역,이름,컨셉등 다양하게 필터링을 받아서 조건에 맞는 컨텐츠를 제공되도록 구현</li>
+  <li>게시판, 공지사항 등록 시 다중파일 첨부 구현</li>
   <li>관광지, 맛집, 숙소 3개의 테이블에서 컨텐츠 코드를 통해 1개의 보관함 테이블에 쌓이도록 구현</li>
   <li>소통 게시글, 소통 게시글 댓글, 공지 게시글 댓글 3개의 테이블에서 신고 코드를 통해 1개의 신고 테이블에 쌓이도록 구현</li>
   <li>보관함에 있는 컨텐츠들을 다수의 여행일정에서 원하는 일차에 쌓이도록 쿼리문 작성</li>
@@ -42,8 +41,8 @@
 
 <h3>그때그조 TEAM</h3>
 <ul>
-  <li>권령익 : 관리자 페이지, 여행일정관리, Q&A</li>
-  <li>고종규 : 회원, 코스 </li>
+  <li>권령익 : 회원 관리(관리자) 공지 관리(관리자), 문의 관리(사용자,관리자), 여행일정 관리</li>
+  <li>고종규 : 회원 관리(사용자), 코스 </li>
   <li>김미소 : 게시판, 숙소</li>
   <li>양우석 : 보관함, 맛집</li>
   <li>양유진 : 공지사항, 관광지</li>
@@ -72,39 +71,81 @@
 </ul>
 <hr>
 
-<h3>여행 탐색</h3>
-<h4>코스</h4>
-<img src="https://user-images.githubusercontent.com/97438483/194474173-26d422d1-776b-4f75-a523-c275ad11c573.JPG">
-<h4>관광지</h4>
-<img src="https://user-images.githubusercontent.com/97438483/194474522-7c1e6e84-a1a5-448e-ab6d-af3d670890a3.JPG">
-<h4>맛집</h4>
-<img src="https://user-images.githubusercontent.com/97438483/194474606-db122d65-2c5d-48c6-803f-7d09c12364c1.JPG">
-<h4>숙소</h4>
-<img src="https://user-images.githubusercontent.com/97438483/194474610-8c22cd77-19fc-468e-a1cf-4cfb790ba427.JPG">
-<hr>
+아래 토글을 통해 해당 컨텐츠의 이미지를 볼 수 있습니다.
+<details>
+<summary><h3>메인 페이지</h3></summary>
+<div markdown="1">
+<img src="https://user-images.githubusercontent.com/97438483/202740395-e683d896-eb69-4226-99fd-367a4c16c082.PNG">
+</div>
+</details>
 
-<h3>게시판</h3>
+<details>
+<summary><h3>여행 탐색</h3></summary>
+<div markdown="1">
+<h4>코스</h4>
+<img src="https://user-images.githubusercontent.com/97438483/202741321-63ed6ebe-c3cd-49c9-82a9-325bffc27793.JPG">
+<h4>관광지</h4>
+<img src="https://user-images.githubusercontent.com/97438483/202741324-39f4d694-8cc6-4f66-9076-d8306513ca00.JPG">
+<h4>맛집</h4>
+<img src="https://user-images.githubusercontent.com/97438483/202741329-ab4bbd32-f354-4b75-96ee-8c7510231bd8.JPG">
+<h4>숙소</h4>
+<img src="https://user-images.githubusercontent.com/97438483/202741334-3f6396b2-7a73-4d7c-b916-8de8278dad46.JPG">
+</div>
+</details>
+
+<details>
+<summary><h3>게시판</h3></summary>
+<div markdown="1">
 <img src="https://user-images.githubusercontent.com/97438483/194475419-14d7a1fc-48b6-48eb-8e36-3e9a7f1b49f4.JPG">
 <img src="https://user-images.githubusercontent.com/97438483/194475425-bfd81b4b-ec06-4a2c-9269-455122579833.JPG">
+</div>
+</details>
 
 
-<h3>마이페이지</h3>
+<details>
+<summary><h3>마이페이지</h3></summary>
+<div markdown="1">
 <img src="https://user-images.githubusercontent.com/97438483/194475345-7b6626a0-343c-48df-a73e-d466202ba863.JPG">
 <img src="https://user-images.githubusercontent.com/97438483/194475348-d6713810-415f-48a9-8220-e3f7bc1961c0.JPG">
-<h4>보관함</h4>
-<img src="https://user-images.githubusercontent.com/97438483/194475361-bf28b548-d502-4a4e-b3d0-6ba094379ddc.JPG">
-<h4>여행일정</h4>
-<img src="https://user-images.githubusercontent.com/97438483/194475367-10f0384a-d0dc-4818-a41c-358a788cadbc.JPG">
-<h4>내정보 관리</h4>
-<img src="https://user-images.githubusercontent.com/97438483/194476257-d6007d48-ccf4-41b7-8475-8b6109db075b.JPG">
-<h4>Q&A</h4>
-<img src="https://user-images.githubusercontent.com/97438483/194476269-77f924ec-82b5-43e5-9e34-cc203da0e0b3.JPG">
-<hr>
+</div>
+</details>
 
-<h3>관리자 페이지</h3>
-<img src="https://user-images.githubusercontent.com/97438483/194475680-8ecf224e-b416-436f-8ec1-c706b56e20bc.JPG">
-<img src="https://user-images.githubusercontent.com/97438483/194475704-5399e80a-d9e1-41f2-865e-a4c30dd0f340.JPG">
-<img src="https://user-images.githubusercontent.com/97438483/194475706-d73aa065-e68f-4b7b-b1fe-23d410ab407b.JPG">
-<img src="https://user-images.githubusercontent.com/97438483/194475718-964a6b03-50a9-45fb-bc29-f46f2172cc9f.JPG">
-<img src="https://user-images.githubusercontent.com/97438483/194475726-7e5cc4df-ccdf-4d27-acdb-dff498a4da07.JPG">
+
+<details>
+<summary><h3>보관함</h3></summary>
+<div markdown="1">
+<img src="https://user-images.githubusercontent.com/97438483/202742659-163d8d55-5a1e-4130-976b-01513f9418e5.PNG">
+</div>
+</details>
+
+
+<details>
+<summary><h3>여행일정</h3></summary>
+<div markdown="1">
+<img src="https://user-images.githubusercontent.com/97438483/202742670-889107b4-8254-4ef9-b81c-fca0ff24ffa2.PNG">
+<img src="https://user-images.githubusercontent.com/97438483/202742696-2dd4918a-6a82-4a1c-b57b-9e93a43222ec.PNG">
+<img src="https://user-images.githubusercontent.com/97438483/202742709-936e3c77-4bb3-42d3-b549-541cb9c363d9.JPG">
+
+</div>
+</details>
+
+<details>
+<summary><h3>문의</h3></summary>
+<div markdown="1">
+<img src="https://user-images.githubusercontent.com/97438483/202745060-482ec491-05ec-4d7b-94e3-4797952cbad8.JPG">
+</div>
+</details>
+
+<details>
+<summary><h3>관리자 페이지</h3></summary>
+<div markdown="1">
+<img src="https://user-images.githubusercontent.com/97438483/202744045-4e6a1572-d79d-4863-8b8b-ea3ee7e0d695.PNG">
+<img src="https://user-images.githubusercontent.com/97438483/202744034-07dc284f-79db-4a18-ae28-4ee5ad7c68df.PNG">
+<img src="https://user-images.githubusercontent.com/97438483/202744131-69147314-194d-4a13-8060-807cb1ace152.PNG">
+<img src="https://user-images.githubusercontent.com/97438483/202744149-bdab76ea-30c5-4cbb-8db2-04458517ca4a.PNG">
+<img src="https://user-images.githubusercontent.com/97438483/202744168-d8f28de7-852c-4ec8-9afd-ce0ece77c49a.PNG">
+<img src="https://user-images.githubusercontent.com/97438483/202744177-926939a6-98aa-4a85-be42-6569583efdb4.PNG">
+</div>
+</details>
+
 
